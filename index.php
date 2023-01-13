@@ -99,25 +99,31 @@ interface SaitCrier {
 
 $timmy = new Soldat();
 $timmy->setPrenom("Timmy");
-$timmyPrenom = $timmy->getPrenom();
-echo "Soldat $timmyPrenom : <br> ";
+$timmy->setMatricule(334535);
+echo "Soldat ".$timmy->getPrenom()." matricule numéro ".$timmy->getMatricule().": <br> ";
 $timmy->marcherEnRang();
 echo "<br><br>";
 
 $roger = new Lieutenant();
-echo "Lieutenant : <br>";
+$roger->setPrenom("Roger");
+$roger->setMatricule(127307);
+echo "Lieutenant ".$roger->getPrenom()." matricule numéro ".$roger->getMatricule().": <br> ";
 $roger->crier();
 $roger->conduire();
 echo "<br><br>";
 
 $laurent = new General();
-echo "Général: <br>";
+$laurent->setPrenom("Laurent");
+$laurent->setMatricule(984538);
+echo "Général ".$laurent->getPrenom()." matricule numéro ".$laurent->getMatricule().": <br> ";
 $laurent->crier();
 $laurent->voiture();
 echo "<br><br>";
 
 $fabrice = new SuperGeneral();
-echo "Super Général : <br>";
+$fabrice->setPrenom("Fabrice");
+$fabrice->setMatricule(999999);
+echo "Super Général ".$fabrice->getPrenom()." matricule numéro ".$fabrice->getMatricule().": <br> ";
 $fabrice->voiture();
 $fabrice->crier();
 echo "<br><br>";
